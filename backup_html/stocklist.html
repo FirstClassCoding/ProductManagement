@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <head>
+        <title>FirstClassCoding</title>
+        <link rel = 'stylesheet' href = '/script/style.css'>
+    </head>
+
+    <style>
+        .main-table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        width: 100%;
+        }
+    </style>
+
+    <body class = 'mainbg'>
+
+        <div class = 'blue-bg master-head'>
+            <img src = './database/FirstClassCoding_LOGO.png' class = 'master-header-logo'>
+            <p class = 'master-head master-firstclasscoding-text'><b>FirstClassCoding</b></p>
+        </div>
+
+        <nav id = 'selector-menu'></nav>
+
+        <h1 class = 'header-forum'>Stock List</h1>
+
+        <div class = 'stock-list-content white-bg'>
+                <table id = 'list-table' class = 'main-table'></table>
+        </div>
+
+    </body>
+
+</html>
+
+<script src = 'https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>
+<script src = '/script/stocklist.js'></script>
+<script src = '/script/selector.js'></script>
