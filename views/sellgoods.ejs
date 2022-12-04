@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <head>
+        <title>FirstClassCoding</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <style>
+        .main-table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        width: 100%;
+        }
+    </style>
+
+    <body class="mainbg">
+
+        <div class="blue-bg master-head">
+            <img src="FirstClassCoding_LOGO.png" class="master-header-logo">
+            <p class="master-head master-firstclasscoding-text"><b>FirstClassCoding</b></p>
+            <p class="master-user-text">Login as <%= name %> | Rank : <%= class_rank %></p>
+            <a href="/logout" class="logout-btn">Logout</a>
+        </div>
+
+        <nav id="selector-menu"></nav>
+
+        <h1 class="header-forum">
+            Sell Goods
+            <select id="select-name"></select>
+        </h1>
+
+        <div class="get-stock-list-content white-bg">
+            <form id="list-data">
+                <table id="list-table" class="main-table"></table>
+                <input class="add-data-bt-position" type="submit" value="Remove Stock">
+            </form>
+        </div>
+
+    </body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="sellgoods.js"></script>
+<script src="selector_admin.js"></script>
