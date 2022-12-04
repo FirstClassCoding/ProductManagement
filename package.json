@@ -1,0 +1,33 @@
+{
+  "name": "productmanagement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "website.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "web": "nodemon website.js",
+    "server": "nodemon ./server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FirstClassCoding/ProductManagement.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FirstClassCoding/ProductManagement/issues"
+  },
+  "homepage": "https://github.com/FirstClassCoding/ProductManagement#readme",
+  "dependencies": {
+    "axios": "^1.2.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cookie-session": "^2.0.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "mysql2": "^2.3.3"
+  }
+}
